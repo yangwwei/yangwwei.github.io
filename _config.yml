@@ -9,7 +9,7 @@ excerpt_separator: <!--more-->
 # Config for your profile.
 title:            Streamline ONE  # Site title
 name:             Weiwei Yang              # Your name
-avatar:           /theme/img/avatar.jpg   # Path to an avatar image
+avatar:           /theme/img/luoyun.jpg  # Path to an avatar image
 
 # The theme uses the baseurl throughout, which is useful for running the entire
 # site under a subdir, like for this GitHub Pages deployment as a project site.

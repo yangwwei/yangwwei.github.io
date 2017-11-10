@@ -6,7 +6,7 @@ narrow: true
 
 {% include components/intro.md %}
 
-[More about John.]({{ site.baseurl}}{% link _pages/about.md %})
+[More about Weiwei.]({{ site.baseurl}}{% link _pages/about.md %})
 
 <div class="card mb-3">
     <img class="card-img-top" src = "https://drscdn.500px.org/photo/143841823/q%3D80_m%3D1500/v2?webp=true&sig=3c0fa3b75ac4098ca23a31d681a6bc4d2dc91877294fd966dd202aa5b5eb3688"/>
@@ -34,5 +34,3 @@ John has posted a bunch of tips about how to use Friday Theme. There's the three
 {% for post in site.posts limit:3 %}
 {% include components/post-card.html %}
 {% endfor %}
-
-

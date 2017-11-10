@@ -14,7 +14,6 @@
   href: https://www.twitter.com
   icon: entypo/twitter.svg
 
-- caption: London
-  href: https://www.google.co.uk/maps/place/London/@51.528308,-0.3817765,10z/data=!3m1!4b1!4m5!3m4!1s0x47d8a00baf21de75:0x52963a5addd52a99!8m2!3d51.5073509!4d-0.1277583
+- caption: Beijing
+  href: https://www.google.co.uk/maps/place/%E4%B8%AD%E5%9B%BD%E5%8C%97%E4%BA%AC%E5%B8%82/@39.9385466,116.1172736,10z/data=!3m1!4b1!4m5!3m4!1s0x35f05296e7142cb9:0xb9625620af0fa98a!8m2!3d39.9041999!4d116.4073963
   icon: entypo/location-pin.svg
-
