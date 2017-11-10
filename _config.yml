@@ -1,10 +1,5 @@
+title: Minimal theme
+description: Minimal is a theme for GitHub Pages.
+show_downloads: true
+google_analytics:
 theme: jekyll-theme-minimal
-title: Streamline ONE
-description:
-  This is a tech blog to share knowledge on the designs of large scale
-  computation and distributed file system; and to discuss popular open
-  source projects such as HDFS, YARN, Flink, Spark in large production
-  clusters.
-github_username: yangwwei
-author: Weiwei Yang
-email: cheersyang@hotmail.com
