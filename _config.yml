@@ -1,4 +1,4 @@
-theme: jekyll-theme-slate
+theme: jekyll-theme-minimal
 title: Streamline ONE
 description: This is a tech blog to share knowledge on the designs of large scale
 computation and distributed file system; and to discuss popular open
