@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+<!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Streamline ONE | Distributed system, HDFS, YARN, Flink</title>
+<meta property="og:title" content="Streamline ONE" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Distributed system, HDFS, YARN, Flink" />
+<meta property="og:description" content="Distributed system, HDFS, YARN, Flink" />
+<link rel="canonical" href="http://localhost:4000/ozone-delete-object-design.html" />
+<meta property="og:url" content="http://localhost:4000/ozone-delete-object-design.html" />
+<meta property="og:site_name" content="Streamline ONE" />
+<script type="application/ld+json">
+{"name":null,"description":"Distributed system, HDFS, YARN, Flink","author":null,"@type":"WebPage","url":"http://localhost:4000/ozone-delete-object-design.html","publisher":null,"image":null,"headline":"Streamline ONE","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+    <link rel="stylesheet" href="/assets/css/style.css?v=">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <a href=""> <h1>Streamline ONE</h1> </a>
+        <p>Distributed system, HDFS, YARN, Flink</p>
+
+        
+
+        
+
+        
+      </header>
+      <section>
+
+      <h2 id="asynchronous-object-delete-design">Asynchronous Object Delete Design</h2>
+
+<h2 id="design-overview"><a href="#header-2"></a>Design Overview</h2>
+
+<p>Delete an object from ozone file system, and all data associated with this object will also be deleted. Ozone is a multi-layer distributed system that includes some primitive services, each layer needs to maintain a consistent view of under deletion keys.
+Once a client calls KSM API to delete a key, the key is transited to <code class="highlighter-rouge">deleting</code>[1] state that indicating this key is currently under deletion. Once KSM is <code class="highlighter-rouge">acknowledged</code>[2] this state change, the key is removed from the namespace and becomes invisible from clients. That means it can no longer be query-able via any KSM API. However, at this point the actual data of this object is not purged yet, it happens in an asynchronous manner. That means, each layer transited the key states relying on acknowledgements instead of actual deletion results.</p>
+
+<p>Below is the overall architecture,</p>
+
+<p><img src="https://guides.github.com/activities/hello-world/branching.png" alt="" /></p>
+
+<p><a href="./">back</a></p>
+
+
+      </section>
+      <footer>
+        
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="/assets/js/scale.fix.js"></script>
+
+
+  
+  </body>
+</html>

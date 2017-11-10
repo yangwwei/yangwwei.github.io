@@ -15,6 +15,6 @@ clusters.
 
 # [](#header-1)Design of Ozone Object Deletion
 
-[Link to another page](another-page).
+[Link to another page](ozone-delete-object-design).
 
 * * *
