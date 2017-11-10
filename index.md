@@ -1,20 +1,8 @@
 ---
-layout: default
+#
+# You don't need to edit this file, it's empty on purpose.
+# Edit minima's home layout instead if you wanna make some changes
+# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+#
+layout: home
 ---
-
-# [](#header-1)Welcome!
-
-This is a tech blog to share knowledge on the designs of large scale
-computation and distributed file system; and to discuss popular open
-source projects such as HDFS, YARN, Flink, Spark in large production
-clusters.
-
-[About the author](about).
-
-* * *
-
-# [](#header-1)Design of Ozone Object Deletion
-
-[Link to another page](another-page).
-
-* * *
