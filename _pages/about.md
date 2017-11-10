@@ -14,6 +14,15 @@ as a Senior Software engineer. Now I am focusing on evolving the Realtime Comput
 e-commerce online & offline workloads. I am very passionate in
 Open Source area and have lots of experiences, an active [apache Hadoop committer](http://people.apache.org/phonebook.html?uid=wwei). I hold a master degree of [Peking University](http://english.pku.edu.cn/).
 
+<div class="card mb-3">
+    <img class="card-img-top" src="/assets/withspiderman.jpg"/>
+    <div class="card-body bg-light">
+        <div class="card-text">
+            This photo was taken after watching "Spider Man 3", I love this movie!.
+        </div>
+    </div>
+</div>
+
 ### Technology
 
 * Distributed Systems
