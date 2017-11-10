@@ -9,4 +9,4 @@ Once a client calls KSM API to delete a key, the key is transited to `deleting`[
 
 Below is the overall architecture,
 
-[design-architecture](https://github.com/yangwwei/yangwwei.github.io/blob/master/images/design-arch.png)
+[design-architecture]
