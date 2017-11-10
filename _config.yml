@@ -7,8 +7,8 @@ highlighter:      rouge
 excerpt_separator: <!--more-->
 
 # Config for your profile.
-title:            friday-theme.github.io  # Site title
-name:             John Smith              # Your name
+title:            Streamline ONE  # Site title
+name:             Weiwei Yang              # Your name
 avatar:           /theme/img/avatar.jpg   # Path to an avatar image
 
 # The theme uses the baseurl throughout, which is useful for running the entire
@@ -64,5 +64,3 @@ defaults:
     values:
       show_profile: false
       layout: defaults/list
-
-
