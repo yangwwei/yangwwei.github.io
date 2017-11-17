@@ -4,7 +4,9 @@ tags:
   - YARN
 ---
 
-# Hadoop Yarn Code Helper
+This post introduces some notes to help understand yarn internals.
+
+<!--more-->
 
 ### Resource Manager
 

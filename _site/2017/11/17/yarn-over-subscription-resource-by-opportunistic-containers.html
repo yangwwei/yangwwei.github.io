@@ -10,7 +10,7 @@
 
     <title>
         
-            YARN Internals &middot; Streamline ONE
+            Over-Subscription Cluster Resource by Opportunistic Containers &middot; Streamline ONE
         
     </title>
 
@@ -87,7 +87,7 @@
     <div class="card bg-light mb-3">
         <div class="card-body">
             <div class="card-title">
-                <h5>13 Oct 2017</h5>
+                <h5>17 Nov 2017</h5>
             </div>
             <div class="d-flex flex-wrap align-items-center">
                 <span class="icon grey mr-2 mb-2">
@@ -140,14 +140,14 @@
 
         </div>
         <div class="col-md-12 col-lg-8 col-xl-8 pb-4 content">
-            <h1 class="border border-top-0 border-right-0 border-left-0 mb-3 pb-2">YARN Internals</h1>
+            <h1 class="border border-top-0 border-right-0 border-left-0 mb-3 pb-2">Over-Subscription Cluster Resource by Opportunistic Containers</h1>
 
 <div class="d-md-block d-lg-none">
     <div class="sticky-top space-before">
     <div class="card bg-light mb-3">
         <div class="card-body">
             <div class="card-title">
-                <h5>13 Oct 2017</h5>
+                <h5>17 Nov 2017</h5>
             </div>
             <div class="d-flex flex-wrap align-items-center">
                 <span class="icon grey mr-2 mb-2">
@@ -195,102 +195,84 @@
 
 </div>
 
-<p>This post introduces some notes to help understand yarn internals.</p>
+<p>Just like airline overbooks their flights, yarn can (and should) provide the capability
+to overbook its resource for applications to increase the resource utilization.</p>
 
 <!--more-->
 
-<h3 id="resource-manager">Resource Manager</h3>
+<h3 id="motivation">Motivation</h3>
 
-<p>During startup, RM starts several services, such as</p>
+<p>One problem with yarn is that we can hardly get the cluster to reach a relative
+high resource utilization due to its scheduling model. Majorly because,</p>
 
-<ul>
-  <li>an event <code class="highlighter-rouge">Dispatcher</code>, it dispatches events to registered even handlers based on event types. This includes a lot of handlers for all sorts of events. Including container, task, nodemanager, containermanager, application events. See more in <code class="highlighter-rouge">RM Events</code> section.</li>
-  <li>an <code class="highlighter-rouge">AdminService</code>, this server talks to RM via ResourceManagerAdministrationProtocol. This service exposes some admin commandline utilities, such as refreshQueues.</li>
-  <li>if HA is enabled, starts an <code class="highlighter-rouge">EmbeddedElector</code> for active master election</li>
-  <li>a http web server</li>
-  <li>a <code class="highlighter-rouge">RMApplicationHistoryWriter</code> which writes information of RMApp, RMAppAttempt, RMContainer to history server</li>
-  <li>a <code class="highlighter-rouge">RMTimelineCollectorManager</code>, so system metrics publisher can bind to it</li>
-</ul>
+<ol>
+  <li>Yarn containers are fixed size, once allocated, it occupies the fixed amount
+of resource during its entire lifecycle. However, resource usage of an application
+is changing over the time, it might consume very rare resource when it is idle
+so most of time the resource is wasted. This is even worse when there is long running services.</li>
+  <li>Most of user sets the resource request according to the maximum required
+resource to ensure they get a predictable SLA for their applications. Again,
+most of time such configuration wastes a lot of resources.</li>
+</ol>
 
-<h4 id="rm-events">RM Events</h4>
+<p>Just like airline overbooks their flights, yarn can (and should) provide the capability
+to overbook its resource for applications to increase the resource utilization.
+This work is firstly proposed in yarn community via <a href="https://issues.apache.org/jira/browse/YARN-1011">YARN-1011</a>, this post is exploring
+how this problem is solved with that approach.</p>
 
-<table>
-  <thead>
-    <tr>
-      <th>Event Listener</th>
-      <th>Duty</th>
-      <th>Events</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>ContainerLauncher</td>
-      <td>handles container luanch events</td>
-      <td>REMOTE_LUNCH, COMPLETE,  CLEANUP</td>
-    </tr>
-    <tr>
-      <td>TaskAttemptImpl</td>
-      <td>handles the lifecycle events of a task</td>
-      <td>ASSIGNED, KILL, COMPLETE</td>
-    </tr>
-    <tr>
-      <td>NodeManager</td>
-      <td>handles node manager lifecycle events</td>
-      <td>SHUTDOWN, RESYNC</td>
-    </tr>
-    <tr>
-      <td>ContainerManager</td>
-      <td>handles container events</td>
-      <td>FINISH_APPS, FINISH_CONTAINERS, UPDATE_CONTAINERS, SIGNAL_CONTAINERS</td>
-    </tr>
-    <tr>
-      <td>Application</td>
-      <td>handles application events</td>
-      <td>APPCONTAINER_INIT,  APPCONTAINER_FINISHED, CONTAINER_INIT, APPLICATION_FINISHED, APPLICATION_INIT(INITED)</td>
-    </tr>
-    <tr>
-      <td>Container</td>
-      <td>handles container events</td>
-      <td>INIT, DIAGNOSISTIC_UPDATE, EXIT, KILL, PUASE, REINIT, RESOURCE, RESOURCEFAILED, RESOURCELOCALIZED, RESUME, UPDATE/_TOKEN</td>
-    </tr>
-    <tr>
-      <td>ContainerLauncher</td>
-      <td>handles container launch events</td>
-      <td>LAUNCH_CONTAINER, RELAUNCH_CONTAINER, RECOVER_CONTAINER, RECOVER_PAUSED_CONTAINER, CLEANUP_CONTAINER, CLEANUP_CONTAINER_FOR_REINIT, SIGNAL_CONTAINER, PAUSE_CONTAINER, RESUME_CONTAINER</td>
-    </tr>
-    <tr>
-      <td>LocalizedResource</td>
-      <td>handles resource localization events</td>
-      <td>FAILED_LOCALIZATION, LOCALIZED, RECOVERED, RELEASE, REQUEST</td>
-    </tr>
-    <tr>
-      <td>LocalResourceTracker</td>
-      <td>tracks localization status</td>
-      <td>LOCALIZED, REQUEST, RELEASE, LOCALIZATION_FAILED, RECOVERED</td>
-    </tr>
-    <tr>
-      <td>ResourceLocalizationService</td>
-      <td>handles localization events</td>
-      <td>INIT_APPLICATION_RESOURCES, LOCALIZE_CONTAINER_RESOURCES, CONTAINER_RESOURCES_LOCALIZED, CACHE_CLEANUP, CLEANUP_CONTAINER_RESOURCES, DESTROY_APPLICATION_RESOURCES</td>
-    </tr>
-    <tr>
-      <td>…</td>
-      <td>…</td>
-      <td>…</td>
-    </tr>
-  </tbody>
-</table>
+<h3 id="opportunistic-container">Opportunistic Container</h3>
 
-<h4 id="rm-services">RM Services</h4>
+<p>Opportunistic container is a new type of container that aims to over-subscribe system resource in order to increase resource utilization in a yarn cluster.</p>
+
+<h4 id="guaranteed-container">Guaranteed Container</h4>
+
+<p>Traditional container type, subscribe a fixed amount of resource from yarn cluster. Once a guaranteed container is allocated, the resource this container specified is booked from yarn capacity and yarn will ensure this amount of resource can be guaranteed at any point of time.</p>
+
+<h4 id="opportunistic-container-1">Opportunistic Container</h4>
+
+<p>The allocation decision for an opportunistic container is not depending on the capacity of the cluster, instead it is determined by the real time resource utilization in the cluster while the request is made. Which means, even the cluster capacity is all booked by guaranteed containers and there is no enough capacity to satisfy the desired requested resource of an
+opportunistic container, it can be still allocated as long as there is free resource available on node managers. This is also called over-subscription.</p>
+
+<p>This mechanism helps to improve the utilization of the resource. However, it is necessarily to know that yarn gives no guarantee of the resources allocated to such containers. So it might be killed or preempted when it needs to recycle some resource to avoid starving guaranteed containers.</p>
+
+<p><img src="/assets/yarn-over-subscription-1.png" alt="Chart 1. Over-subscription" /></p>
+
+<p>Chart 1 illustrates how the over-subscription works on a node manager. Node manager monitors the node resource usage in a certain frequency (default 3s), if it detects there is free resource available on this node, then these resource can be utilized by opportunistic containers. The total allocated the resource cannot exceed the system limit at any time.</p>
+
+<h4 id="schedule-opportunistic-containers">Schedule Opportunistic Containers</h4>
+
+<p>Resource manager runs an application master service processor to handle the requests from application masters, it was working like following</p>
+
+<p><img src="/assets/yarn-over-subscription-2.png" alt="Char 2 - Current Scheduling Logic" /></p>
+
+<p>Procedure:</p>
+
+<ol>
+  <li>Application master submits resource requests to the application master service running in the resource manager</li>
+  <li>Application master service queries a specific scheduler to decide how to schedule containers</li>
+  <li>Resource manager returns the scheduling decision back to application master</li>
+  <li>Application master interpretes the allocation response and connects to specific node managers to launch containers</li>
+</ol>
+
+<p>With adding the concept of opportunistic containers, the procedure now looks like</p>
+
+<p><img src="/assets/yarn-over-subscription-3.png" alt="Char 3 - Scheduling Guaranteed and Opportunistic Containers" /></p>
+
+<p>Rest of processes remain the same, except for</p>
 
 <ul>
-  <li><strong>ResourceTrackerService</strong>: handles node managers’ heartbeats, keep trakcing of node manager resources.</li>
-  <li><strong>ClientRMService</strong>: handles all the RPC interfaces to the RM from the client, exposes client level APIs.</li>
-  <li><strong>ApplicationMasterService</strong>: this service impelements <code class="highlighter-rouge">ApplicationMasterProtocol</code> which is the protocol between <code class="highlighter-rouge">ApplicationMaster</code> and <code class="highlighter-rouge">ResourceManager</code>. This handles AM registration, allocate resources to the end of the AM lifecycle.</li>
-  <li><strong>AdminService</strong>: this server talks to RM via ResourceManagerAdministrationProtocol. This service exposes some admin commandline utilities, such as refreshQueues.</li>
-  <li><strong>RMSecretManagerService</strong>: handles AM, NM secret tokens.</li>
-  <li><strong>RMDelegatedNodeLabelsUpdater</strong>: update nodes labels map for ResourceManager periodically.</li>
+  <li>There is a chain of application master service processors, the default one handles the scheduling of guaranteed containers and the opportunistic AMS processor handles the scheduling of opportunistic containers</li>
 </ul>
+
+<h4 id="over-allocation-and-preemption">Over-allocation and Preemption</h4>
+
+<p>Node manager over-allocation and preemption is controlled by thresholds, they are configurable percentage of nodes’ resource.</p>
+
+<p><img src="/assets/yarn-over-subscription-4.png" alt="Chart 4 - Over-allocation and Preemption" /></p>
+
+<p>Node manager collects the memory/CPU usage by all containers from cgroups, and reports that to resource manager via heartbeat. There are two configurable thresholds, one for over-allocation and the other for preemption. When node resource utilization is under the over-allocation-threshold, this node will be scheduled with some opportunistic containers that utilizes the resource beyond this threshold and under the preemption-threshold.</p>
+
+<p>If the resource usage exceeds the preemption-threshold, then node manager starts to preempt containers from this node to keep the utilization under this threshold.</p>
 
 
 
