@@ -42,7 +42,7 @@ opportunistic container, it can be still allocated as long as there is free reso
 
 This mechanism helps to improve the utilization of the resource. However, it is necessarily to know that yarn gives no guarantee of the resources allocated to such containers. So it might be killed or preempted when it needs to recycle some resource to avoid starving guaranteed containers.
 
-![Chart 1. Over-subscription](/assets/yarn-over-subscription-1.png)
+![Chart 1. Over-subscription](/assets/yarn-over-subscription-1.jpg)
 
 Chart 1 illustrates how the over-subscription works on a node manager. Node manager monitors the node resource usage in a certain frequency (default 3s), if it detects there is free resource available on this node, then these resource can be utilized by opportunistic containers. The total allocated the resource cannot exceed the system limit at any time.
 
@@ -50,7 +50,7 @@ Chart 1 illustrates how the over-subscription works on a node manager. Node mana
 
 Resource manager runs an application master service processor to handle the requests from application masters, it was working like following
 
-![Char 2 - Current Scheduling Logic](/assets/yarn-over-subscription-2.png)
+![Char 2 - Current Scheduling Logic](/assets/yarn-over-subscription-2.jpg)
 
 Procedure:
 
@@ -61,7 +61,7 @@ Procedure:
 
 With adding the concept of opportunistic containers, the procedure now looks like
 
-![Char 3 - Scheduling Guaranteed and Opportunistic Containers](/assets/yarn-over-subscription-3.png)
+![Char 3 - Scheduling Guaranteed and Opportunistic Containers](/assets/yarn-over-subscription-3.jpg)
 
 Rest of processes remain the same, except for
 
@@ -71,7 +71,7 @@ Rest of processes remain the same, except for
 
 Node manager over-allocation and preemption is controlled by thresholds, they are configurable percentage of nodes’ resource.
 
-![Chart 4 - Over-allocation and Preemption](/assets/yarn-over-subscription-4.png)
+![Chart 4 - Over-allocation and Preemption](/assets/yarn-over-subscription-4.jpg)
 
 Node manager collects the memory/CPU usage by all containers from cgroups, and reports that to resource manager via heartbeat. There are two configurable thresholds, one for over-allocation and the other for preemption. When node resource utilization is under the over-allocation-threshold, this node will be scheduled with some opportunistic containers that utilizes the resource beyond this threshold and under the preemption-threshold.
 
