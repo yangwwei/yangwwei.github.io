@@ -38,7 +38,7 @@ qperf <host/ip> tcp_bw tcp_lat conf
 Each case, I've run qperf for 5 times and counted an average value, see following result,
 
 | Env       | bandwidth(Bridge) | bandwidth(Host) | bandwidth(Physical) | latency(Bridge)  | latency(Host) |latency(Physical) |
-| ------------- |:-------------:| -----:| ----:|----:|----:|----:|
+| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
 | Same physical machine | 4024 | 4639 | 4874 | 9.04 | 7.9 | 6.73 |
 | Two different physical machines | 1010 | 1013 | 1035 | 20 | 17.5 | 17.1 |
 
