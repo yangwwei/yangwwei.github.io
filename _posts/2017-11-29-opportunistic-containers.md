@@ -36,7 +36,7 @@ Run following command
 
 By specifying `-Dmapreduce.job.num-opportunistic-maps-percent="40"`, we are expecting 40% of the total mappers will be running in opportunistic containers. Once the job is running, navigate to `http://<resource-manager>:<webapp-port>/cluster/nodes`. We can see a column `QueuedContainers` where as the value becomes larger than 0. That means node manager starts to queue opportunistic containers.
 
-![Queued Opportunistic Containers](assets/queued_containers.jpg "Queued Opportunistic Containers")
+![Queued Opportunistic Containers](/assets/queued_containers.jpg "Queued Opportunistic Containers")
 
 In this simple test, my single node cluster has no free resource to launch these opportunistic containers, therefore I start to see following messages in job execution log,
 
