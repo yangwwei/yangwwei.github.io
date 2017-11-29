@@ -22,10 +22,7 @@ so most of time the resource is wasted. This is even worse when there is long ru
 resource to ensure they get a predictable SLA for their applications. Again,
 most of time such configuration wastes a lot of resources.
 
-Just like airline overbooks their flights, yarn can (and should) provide the capability
-to overbook its resource for applications to increase the resource utilization.
-This work is firstly proposed in yarn community via [YARN-1011](https://issues.apache.org/jira/browse/YARN-1011), this post is exploring
-how this problem is solved with that approach.
+This work is firstly proposed in yarn community via [YARN-1011](https://issues.apache.org/jira/browse/YARN-1011), this post is exploring how this problem is solved with that approach.
 
 ### Opportunistic Container
 
