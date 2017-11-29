@@ -22,7 +22,7 @@ so most of time the resource is wasted. This is even worse when there is long ru
 resource to ensure they get a predictable SLA for their applications. Again,
 most of time such configuration wastes a lot of resources.
 
-This work is firstly proposed in yarn community via [YARN-1011](https://issues.apache.org/jira/browse/YARN-1011), this post is exploring how this problem is solved with that approach.
+Opportunistic containers was added in [YARN-2882](https://issues.apache.org/jira/browse/YARN-2882), as a sub-task of [YARN-2877](https://issues.apache.org/jira/browse/YARN-2877). The over-subscription work is currently work-in-progress and tracked in [YARN-1011](https://issues.apache.org/jira/browse/YARN-1011). This post is exploring how this approach improves cluster resource utilization and how it works.
 
 ### Opportunistic Container
 
