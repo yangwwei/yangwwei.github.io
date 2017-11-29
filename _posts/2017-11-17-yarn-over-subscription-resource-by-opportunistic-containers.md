@@ -2,6 +2,7 @@
 title:  Over-Subscription Cluster Resource by Opportunistic Containers
 tags:
   - YARN
+  - Opportunistic-container
 ---
 
 Just like airline overbooks their flights, yarn can (and should) provide the capability

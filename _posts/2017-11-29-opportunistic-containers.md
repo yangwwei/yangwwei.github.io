@@ -2,6 +2,7 @@
 title: Opportunistic Containers in Practice
 tags:
   - YARN
+  - Opportunistic-container
 ---
 
 This post is about some practices around opportunistic containers in yarn.
