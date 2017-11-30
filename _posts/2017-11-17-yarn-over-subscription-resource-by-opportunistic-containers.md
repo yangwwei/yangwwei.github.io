@@ -6,8 +6,10 @@ tags:
   - Over-subscription
 ---
 
-Just like airline overbooks their flights, yarn can (and should) provide the capability
-to overbook its resource for applications to increase the resource utilization.
+Yarn is stepping forward to improve cluster utilization. One interesting work is
+to provide the capability to oversell its resource for applications. In this post,
+I am exploring this feature and some other related ones to present a comprehensive
+view about how this will be done.
 
 <!--more-->
 
