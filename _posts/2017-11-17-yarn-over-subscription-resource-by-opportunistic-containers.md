@@ -3,6 +3,7 @@ title:  Over-Subscription Cluster Resource by Opportunistic Containers
 tags:
   - YARN
   - Opportunistic-container
+  - Over-subscription
 ---
 
 Just like airline overbooks their flights, yarn can (and should) provide the capability
@@ -64,6 +65,14 @@ With adding the concept of opportunistic containers, the procedure now looks lik
 Rest of processes remain the same, except for
 
 * There is a chain of application master service processors, the default one handles the scheduling of guaranteed containers and the opportunistic AMS processor handles the scheduling of opportunistic containers
+
+Now let's dive into the process how `OpportunisticAMSProcessor` allocates containers, specifically opportunistic containers. Unlike the default processor, its workflow generally looks like following:
+
+1. Caches all opportunistic container requests as `outstanding requests`, as the queue on NMs are fixed size, so there might be outstanding opportunistic container requests cumulated over the time.
+2. Sorts the outstanding requests in descending order by the capacity, simply it wants to serve "smaller" requests first.
+3. `NodeQueueLoadMonitor` keeps tracking of the loads of all NMs, and select top N nodes to satisfy opportunistic container requests. To determine the load of a NM, current policy is simple, either `queue_length` or `await_time`, which is configurable.
+4. Distributes opportunistic containers to specified nodes and the container gets enqueued on those NMs.
+5. Each NM runs a `ContainerScheduler` which manages the lifecycle of allocated containers, including both guaranteed and opportunistic ones. On each interval, it tries to start as many as queued guaranteed containers then opportunistic containers. And it also takes care of killing opportunistic containers to make room for guaranteed ones.
 
 #### Over-allocation and Preemption
 
