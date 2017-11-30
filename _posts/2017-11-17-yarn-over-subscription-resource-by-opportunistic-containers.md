@@ -96,5 +96,7 @@ If the resource usage exceeds the preemption-threshold, then node manager starts
 #### Reference
 
 [1] [Opportunistic containers user doc](https://hadoop.apache.org/docs/current/hadoop-yarn/hadoop-yarn-site/OpportunisticContainers.html)
+
 [2] [Distributed scheduling design doc](https://issues.apache.org/jira/secure/attachment/12739093/distributed-scheduling-design-doc_v1.pdf)
+
 [3] [YARN-1011 over-subscription resource design doc](https://issues.apache.org/jira/secure/attachment/12874299/yarn-1011-design-v3.pdf)
