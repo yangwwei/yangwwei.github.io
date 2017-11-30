@@ -92,3 +92,9 @@ Node manager over-allocation and preemption is controlled by thresholds, they ar
 Node manager collects the memory/CPU usage by all containers from cgroups, and reports that to resource manager via heartbeat. There are two configurable thresholds, one for over-allocation and the other for preemption. When node resource utilization is under the over-allocation-threshold, this node will be scheduled with some opportunistic containers that utilizes the resource beyond this threshold and under the preemption-threshold.
 
 If the resource usage exceeds the preemption-threshold, then node manager starts to preempt containers from this node to keep the utilization under this threshold.
+
+#### Reference
+
+[1] [Opportunistic containers user doc](https://hadoop.apache.org/docs/current/hadoop-yarn/hadoop-yarn-site/OpportunisticContainers.html)
+[2] [Distributed scheduling design doc](https://issues.apache.org/jira/secure/attachment/12739093/distributed-scheduling-design-doc_v1.pdf)
+[3] [YARN-1011 over-subscription resource design doc](https://issues.apache.org/jira/secure/attachment/12874299/yarn-1011-design-v3.pdf)
