@@ -74,6 +74,13 @@ Now let's dive into the process how `OpportunisticAMSProcessor` allocates contai
 4. Distributes opportunistic containers to specified nodes and the container gets enqueued on those NMs.
 5. Each NM runs a `ContainerScheduler` which manages the lifecycle of allocated containers, including both guaranteed and opportunistic ones. On each interval, it tries to start as many as queued guaranteed containers then opportunistic containers. And it also takes care of killing opportunistic containers to make room for guaranteed ones.
 
+A short summary, scheduling of opportunistic containers ignores checking nodes' capacity and directly dispatches them to NMs. Their execution are started once there is few resource available, and could be preempted at anytime as long as there is new guaranteed containers arrived and found now enough resource available. In practical, when cluster utilization is high, this mechanism would cause very frequent preemptions and cause a lot of work to be wasted. There are a few key improvements need to be done,
+
+1. **Pausing Opportunistic containers**: It is not necessarily to kill the opportunistic container every time to make room for guaranteed ones, which is very expensive. Instead, a container can be `paused` and free up resources, once there is resource available again, it can be `resumed` without wasting previous work. This is currently working in progress [YARN-5972](https://issues.apache.org/jira/browse/YARN-5972).
+2. **Container Prompt**: In some occasions, opportunistic containers need to be prompted to be guaranteed to avoid getting preempted.
+
+The usability will be much improved with such enhancements.
+
 #### Over-allocation and Preemption
 
 Node manager over-allocation and preemption is controlled by thresholds, they are configurable percentage of nodes’ resource.
