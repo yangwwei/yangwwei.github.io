@@ -1,5 +1,5 @@
 ---
-title: YARN-SLS-Guide
+title: YARN SLS Guide
 tags:
   - YARN
   - Performance

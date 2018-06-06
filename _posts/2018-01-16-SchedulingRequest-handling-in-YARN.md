@@ -1,5 +1,5 @@
 ---
-title: SchedulingRequest-handling-in-YARN
+title: SchedulingRequest Handling in YARN
 tags:
   - YARN
   - PlacementConstraint
