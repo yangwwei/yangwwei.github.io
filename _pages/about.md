@@ -17,11 +17,8 @@ Open Source area and have lots of experiences, an active [apache Hadoop committe
 
 _My talks/Posts_:
 
-Apache Spark and DB2 with BLU Acceleration: Making ‘People Flow’ in Cities Measurable and Analyzable.
-> Oct 2015, IBM Insights Conference, Las Vegas, NV
+1. Apache Spark and DB2 with BLU Acceleration: Making ‘People Flow’ in Cities Measurable and Analyzable; _Oct 2015, IBM Insights Conference, Las Vegas, NV_
 
-[Success at Apache: the Chance to Influence the World](https://blogs.apache.org/foundation/entry/success-at-apache-the-chance)
-> Jun 04, 2018 ASF "Success at Apache" Blog Series
+2. [Success at Apache: the Chance to Influence the World](https://blogs.apache.org/foundation/entry/success-at-apache-the-chance); _Jun 04, 2018 ASF "Success at Apache" Blog Series_
 
-[Apache YARN 3.x in Alibaba](https://www.slideshare.net/Hadoop_Summit/apache-hadoop-yarn-3x-in-alibaba)
-> Jun 21, 2018 Dataworks Summit, San Jose, CA
+3. [Apache YARN 3.x in Alibaba](https://www.slideshare.net/Hadoop_Summit/apache-hadoop-yarn-3x-in-alibaba); _Jun 21, 2018 Dataworks Summit, San Jose, CA_
