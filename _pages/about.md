@@ -10,11 +10,11 @@ narrow: true
 
 ![My helpful screenshot]({{ "/assets/withspiderman.jpg" | absolute_url }})
 
-*2018-Present* [Hortonworks](https://en.wikipedia.org/wiki/Hortonworks). Continue to evolve YARN for better enterprise adaption. Containerize, performance, service, ML and more ...
+@[Hortonworks](https://en.wikipedia.org/wiki/Hortonworks). Continue to evolve YARN for better enterprise adaption. Containerize, performance, service, ML and more ...
 
-*2017-2018* [Alibaba](https://en.wikipedia.org/wiki/Alibaba_Group). I was excited working on Apache Hadoop YARN at `10k+` nodes scale. Focus area: resource over-subscription, multi-dimension resource support, global scheduling, placement constraint/node attributes.
+@[Alibaba](https://en.wikipedia.org/wiki/Alibaba_Group). I was excited working on Apache Hadoop YARN at `10k+` nodes scale. Focus area: resource over-subscription, multi-dimension resource support, global scheduling, placement constraint/node attributes.
 
-*2011-2017* [IBM](https://en.wikipedia.org/wiki/IBM). I had multiple roles, a startup member of `BigInsights` project (A Hadoop based BigData Platform Offering by IBM), a `backend engineer` (cluster installation/monitoring), a `team lead`, a `BigData architect` (worked with 50+ customers), a mentor, and more over an `open source contributor` (Apache Hadoop HDFS & YARN, 50k+ LoC, until 2018).
+@[IBM](https://en.wikipedia.org/wiki/IBM). I had multiple roles, a startup member of `BigInsights` project (A Hadoop based BigData Platform Offering by IBM), a `backend engineer` (cluster installation/monitoring), a `team lead`, a `BigData architect` (worked with 50+ customers), a mentor, and more over an `open source contributor` (Apache Hadoop HDFS & YARN, 50k+ LoC, until 2018).
 
 _My Talks/Posts_:
 
