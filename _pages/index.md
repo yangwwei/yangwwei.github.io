@@ -4,8 +4,6 @@ permalink: index.html
 narrow: true
 ---
 
-{% include components/intro.md %}
-
 ## Recent Posts
 
 {% for post in site.posts limit:3 %}
