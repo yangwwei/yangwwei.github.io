@@ -10,10 +10,6 @@ narrow: true
 
 ![My helpful screenshot]({{ "/assets/withspiderman.jpg" | absolute_url }})
 
-Hey, this is a Hadoop Guy
-
-![Hadoop guy]({{ "/assets/hadoop.jpg" | absolute_url }})
-
 *2018-Present* [Hortonworks](https://en.wikipedia.org/wiki/Hortonworks). Continue to evolve YARN for better enterprise adaption. Containerize, performance, service, ML and more ...
 
 *2017-2018* [Alibaba](https://en.wikipedia.org/wiki/Alibaba_Group). I was excited working on Apache Hadoop YARN at `10k+` nodes scale. Focus area: resource over-subscription, multi-dimension resource support, global scheduling, placement constraint/node attributes.
