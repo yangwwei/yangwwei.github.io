@@ -1,5 +1,5 @@
 ---
-title: Open Hybrid Architecture: Running Stateful Containers on YARN
+title: Open Hybrid Architecture Running Stateful Containers on YARN
 tags:
   - YARN
   - Docker
