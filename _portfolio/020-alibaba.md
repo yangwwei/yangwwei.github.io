@@ -1,6 +1,6 @@
 ---
 title: Software Engineer, Real-time Data Infrastructure, Alibaba Group
-duration: Sep, 2017 - Present
+duration: Sep, 2017 - Aug, 2018
 skills:
   - HDFS
   - YARN

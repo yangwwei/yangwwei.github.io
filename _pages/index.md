@@ -4,7 +4,7 @@ permalink: index.html
 narrow: true
 ---
 
-{% include components/intro.md %} Author [Weiwei]({{ site.baseurl}}{% link _pages/about.md %}), email: `cheersyang@hotmail.com`. [Experiences]({{ site.baseurl }}{% link list/portfolio.html %})
+{% include components/intro.md %}
 
 ## Recent Posts
 
