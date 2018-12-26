@@ -10,13 +10,15 @@ narrow: true
 
 ![My helpful screenshot]({{ "/assets/withspiderman.jpg" | absolute_url }})
 
+### ABOUT ME
+
 @[Hortonworks](https://en.wikipedia.org/wiki/Hortonworks). Continue to evolve YARN for better enterprise adaption. Containerize, performance, service, ML and more ...
 
 @[Alibaba](https://en.wikipedia.org/wiki/Alibaba_Group). I was excited working on Apache Hadoop YARN at `10k+` nodes scale. Focus area: resource over-subscription, multi-dimension resource support, global scheduling, placement constraint/node attributes.
 
 @[IBM](https://en.wikipedia.org/wiki/IBM). I had multiple roles, a startup member of `BigInsights` project (A Hadoop based BigData Platform Offering by IBM), a `backend engineer` (cluster installation/monitoring), a `team lead`, a `BigData architect` (worked with 50+ customers), a mentor, and more over an `open source contributor` (Apache Hadoop HDFS & YARN, 50k+ LoC, until 2018).
 
-_My Talks/Posts_:
+### My Talks/Posts:
 
 1. [Apache Hadoop Fundamentals](http://cs.ustc.edu.cn/2012/0815/c14931a24900/page.htm). _School of Computer Science and Technology_ Aug 15, 2012
 
