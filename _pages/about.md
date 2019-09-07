@@ -34,4 +34,6 @@ Want to know more? See [my portfolio](https://yangwwei.github.io/list/portfolio.
 
 6. [Open Hybrid Architecture: Running Stateful Containers on YARN](https://hortonworks.com/blog/open-hybrid-architecture-running-stateful-containers-on-yarn/). Hortonworks Tech Blog. Dec 17, 2018.
 
+7. [Next Generation Scheduling: In Hybrid Cloud Environment for High Performance and Optimized Execution of Mixed Workloads](https://www.slideshare.net/Hadoop_Summit/next-generation-scheduling-for-yarn-and-k8s-for-hybrid-cloudonprem-environment-to-run-mixed-workloads). Dataworks Summit, Washington D.C. May 23, 2019
+
 Get connected with LinkedIn: [Link me!](https://www.linkedin.com/in/yangwwei/).
