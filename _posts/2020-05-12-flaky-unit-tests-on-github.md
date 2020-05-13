@@ -16,8 +16,6 @@ your unit tests stability.
 When we started to build CI/CD pipeline by leveraging the free sources on github,
 first with [Github Actions](https://github.com/features/actions), and then [Travis CI](https://travis-ci.org/). I found our tests become to be flaky. There are some intermittent failures cannot be reproduced in our local env.
 
-![Ocean Search](/assets/ocean-search.jpeg "Ocean Search")
-
 ## What is happening?
 
 The unit tests we have in the [yunikorn-core repo](https://github.com/apache/incubator-yunikorn-core) have 2 main types:
