@@ -1,30 +1,13 @@
 {% if page.show_profile %}
-    <div class="card bg-light">
+    <div class="card pb5 bg-light">
         <div class="card-body text-center">
             {{site.author.name}}
             {% include components/profile-body.html %}
         </div>
     </div>
-
-    <div class="card pt-5 bg-light">
-        <div class="card-body p-2">
-            <div class="card-title">
-                <h5>Filter by Tag</h5>
-            </div>
-            {% for tag in group_names %}
-                <a class="d-inline-block bg-white border rounded p-1 mr-1 mb-1 tag tag-{{ tag | slugify }}"
-                   href="javascript:void(0)"
-                   onclick="showPostByTag('{{ tag | slugify }}', '{{ tag }}')">
-                    {{ tag }}
-                </a>
-            {% endfor %}
-        </div>
-    </div>
 {% endif %}
 
-{% if page.show_tags %}
-    {% include components/all-tags.html %}
-{% endif %}
+{% include components/all-tags.html 
 
 {% if page.show_skills %}
     {% include components/all-skills.html %}
