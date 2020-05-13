@@ -7,13 +7,13 @@
   icon: icons/stackoverflow.svg
 
 - caption: Facebook
-  href: https://www.facebook.com
+  href: https://www.facebook.com/cheerswei/
   icon: entypo/facebook.svg
 
 - caption: Twitter
-  href: https://www.twitter.com
+  href: https://twitter.com/VvoBubble
   icon: entypo/twitter.svg
 
-- caption: Beijing
-  href: https://www.google.co.uk/maps/place/%E4%B8%AD%E5%9B%BD%E5%8C%97%E4%BA%AC%E5%B8%82/@39.9385466,116.1172736,10z/data=!3m1!4b1!4m5!3m4!1s0x35f05296e7142cb9:0xb9625620af0fa98a!8m2!3d39.9041999!4d116.4073963
+- caption: San Francisco Bay Area
+  href: https://www.google.com/maps/place/San+Francisco+Bay+Area,+CA/@37.8738836,-123.5414908,8z/data=!3m1!4b1!4m5!3m4!1s0x808583a3a688d7b5:0x8c891b8457461fa9!8m2!3d37.8271784!4d-122.2913078
   icon: entypo/location-pin.svg
