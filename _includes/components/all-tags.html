@@ -2,13 +2,10 @@
 
 <div class="sticky-top space-before">
     <div class="card bg-light">
-        <div class="card-header">
-          Filter by Tag
-        </div>
         <div class="card-body p-2">
-            <!-- <div class="card-title">
+            <div class="card-title">
                 <h5>Filter by Tag</h5>
-            </div> -->
+            </div>
             {% for tag in group_names %}
                 <a class="d-inline-block bg-white border rounded p-1 mr-1 mb-1 tag tag-{{ tag | slugify }}"
                    href="javascript:void(0)"
