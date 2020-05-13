@@ -7,7 +7,9 @@
     </div>
 {% endif %}
 
-{% include components/all-tags.html %}
+{% if page.show_tags %}
+    {% include components/all-tags.html %}
+{% endif %}
 
 {% if page.show_skills %}
     {% include components/all-skills.html %}
