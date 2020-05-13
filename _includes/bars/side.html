@@ -1,5 +1,5 @@
 {% if page.show_profile %}
-    <div class="card pb5 bg-light">
+    <div class="card bg-light">
         <div class="card-body text-center">
             {{site.author.name}}
             {% include components/profile-body.html %}
@@ -7,7 +7,9 @@
     </div>
 {% endif %}
 
-{% include components/all-tags.html 
+{% if page.show_tags %}
+    {% include components/all-tags.html %}
+{% endif %}
 
 {% if page.show_skills %}
     {% include components/all-skills.html %}
