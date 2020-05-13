@@ -9,12 +9,14 @@ Golang tests are running good on local but becoming flaky on CI/CD pipeline?
 This post introduces a few possibilities could cause this and help you improve
 your unit tests stability.
 
+![Ocean Search](/assets/ocean-search.jpeg "Ocean Search")
+
 <!--more-->
 
 When we started to build CI/CD pipeline by leveraging the free sources on github,
 first with [Github Actions](https://github.com/features/actions), and then [Travis CI](https://travis-ci.org/). I found our tests become to be flaky. There are some intermittent failures cannot be reproduced in our local env.
 
-![Ocean Search](/assets/ocean-search.jpg "Ocean Search")
+![Ocean Search](/assets/ocean-search.jpeg "Ocean Search")
 
 ## What is happening?
 
