@@ -64,3 +64,5 @@ defaults:
     values:
       show_profile: false
       layout: defaults/list
+
+theme: jekyll-theme-hacker
