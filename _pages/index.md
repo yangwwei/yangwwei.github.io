@@ -4,12 +4,10 @@ permalink: index.html
 narrow: true
 ---
 
-## Recent Posts
-
-{% for post in site.posts limit:3 %}
+{% for post in site.posts limit:5 %}
 {% include components/post-card.html %}
 {% endfor %}
 
-## All Posts
+---
 
-See all posts here! [all posts by year.]({{ site.baseurl }}{% link list/posts.html %})
+More posts [here]({{ site.baseurl }}{% link list/posts.html %}) ...
