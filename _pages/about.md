@@ -12,11 +12,20 @@ narrow: true
 
 ### ABOUT ME
 
-@[Hortonworks](https://en.wikipedia.org/wiki/Hortonworks). Continue to evolve YARN for better enterprise adaption. Containerize, performance, service, ML and more ...
+@[Hortonworks](https://en.wikipedia.org/wiki/Hortonworks) & [Cloudera](https://www.cloudera.com/)
+ * Next generation resource scheduling [Apache YuniKorn (Incubating)](http://yunikorn.apache.org/)
+ * Continue to evolve YARN for better enterprise adaption.
+ * Kubernetes, Containerize, performance, service, ML and more
 
-@[Alibaba](https://en.wikipedia.org/wiki/Alibaba_Group). I was excited working on Apache Hadoop YARN at `10k+` nodes scale. Focus area: resource over-subscription, multi-dimension resource support, global scheduling, placement constraint/node attributes.
+@[Alibaba](https://en.wikipedia.org/wiki/Alibaba_Group)
+ * Real-time computing with Apache Flink, Infra engineer
+ * Apache Hadoop YARN at `10k+` nodes scale. Focus area: resource over-subscription, multi-dimension resource support, global scheduling, placement constraint/node attributes.
 
-@[IBM](https://en.wikipedia.org/wiki/IBM). I had multiple roles, a startup member of `BigInsights` project (A Hadoop based BigData Platform Offering by IBM), a `backend engineer` (cluster installation/monitoring), a `team lead`, a `BigData architect` (worked with 50+ customers), a mentor, and more over an `open source contributor` (Apache Hadoop HDFS & YARN, 50k+ LoC, until 2018).
+@[IBM](https://en.wikipedia.org/wiki/IBM)
+ * Startup member of `BigInsights` project (A Hadoop based BigData Platform Offering by IBM)
+ * Distributed system backend engineer (cluster installation/monitoring)
+ * Team lead and BigData architect (worked with 50+ customers)
+ * Apache committer (Apache Hadoop HDFS & YARN, 50k+ LoC).
 
 Want to know more? See [my portfolio](https://yangwwei.github.io/list/portfolio.html).
 
@@ -35,5 +44,8 @@ Want to know more? See [my portfolio](https://yangwwei.github.io/list/portfolio.
 6. [Open Hybrid Architecture: Running Stateful Containers on YARN](https://hortonworks.com/blog/open-hybrid-architecture-running-stateful-containers-on-yarn/). Hortonworks Tech Blog. Dec 17, 2018.
 
 7. [Next Generation Scheduling: In Hybrid Cloud Environment for High Performance and Optimized Execution of Mixed Workloads](https://www.slideshare.net/Hadoop_Summit/next-generation-scheduling-for-yarn-and-k8s-for-hybrid-cloudonprem-environment-to-run-mixed-workloads). Dataworks Summit, Washington D.C. May 23, 2019
+
+8. [Energize Multi-tenancy Flink on K8s with YuniKorn ](https://www.youtube.com/watch?v=NemFKL0kK9U). Virtual Flink Forward Conference, San Francisco, Apr 24, 2020
+
 
 Get connected with LinkedIn: [Link me!](https://www.linkedin.com/in/yangwwei/).
