@@ -47,6 +47,6 @@ Want to know more? See [my portfolio](https://yangwwei.github.io/list/portfolio.
 
 8. [Energize Multi-tenancy Flink on K8s with YuniKorn ](https://www.youtube.com/watch?v=NemFKL0kK9U). Virtual Flink Forward Conference, San Francisco, Apr 24, 2020
 
-9. [YARN to Kubernetes: How to tackle the challenages of resource management](). Hadoop Meetup Shanghai, Sep 26, 2020. [pdf](https://github.com/yangwwei/yangwwei.github.io/blob/master/documents/YARN-to-Kubernetes-how-to-tackle-the-changes-on-resource-scheduling.pdf)
+9. [YARN to Kubernetes: How to tackle the challenages of resource management](). Hadoop Meetup Shanghai, Sep 26, 2020. [download pdf](https://github.com/yangwwei/yangwwei.github.io/raw/master/documents/YARN-to-Kubernetes-how-to-tackle-the-changes-on-resource-scheduling.pdf)
 
 Get connected with LinkedIn: [Link me!](https://www.linkedin.com/in/yangwwei/).
