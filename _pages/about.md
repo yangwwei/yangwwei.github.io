@@ -12,7 +12,10 @@ narrow: true
 
 ### ABOUT ME
 
-@[Hortonworks](https://en.wikipedia.org/wiki/Hortonworks) & [Cloudera](https://www.cloudera.com/)
+Apache Hadoop Committer & PMC member
+Apache YuniKorn (Incubating) PPMC member
+
+@[Cloudera](https://www.cloudera.com/)
  * Next generation resource scheduling [Apache YuniKorn (Incubating)](http://yunikorn.apache.org/)
  * Continue to evolve YARN for better enterprise adaption.
  * Kubernetes, Containerize, performance, service, ML and more
