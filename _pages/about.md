@@ -12,8 +12,9 @@ narrow: true
 
 ### ABOUT ME
 
-Apache Hadoop Committer & PMC member
-Apache YuniKorn (Incubating) PPMC member
+@Apache
+ * Apache Hadoop Committer & PMC member
+ * Apache YuniKorn (Incubating) PPMC member
 
 @[Cloudera](https://www.cloudera.com/)
  * Next generation resource scheduling [Apache YuniKorn (Incubating)](http://yunikorn.apache.org/)
@@ -29,6 +30,10 @@ Apache YuniKorn (Incubating) PPMC member
  * Distributed system backend engineer (cluster installation/monitoring)
  * Team lead and BigData architect (worked with 50+ customers)
  * Apache committer (Apache Hadoop HDFS & YARN, 50k+ LoC).
+
+Education:
+ * Peking University  master
+ * Wuhan University   bachelor
 
 Want to know more? See [my portfolio](https://yangwwei.github.io/list/portfolio.html).
 
