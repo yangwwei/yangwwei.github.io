@@ -14,9 +14,11 @@ narrow: true
 
 @[Apache](https://www.apache.org/)
  * Apache Hadoop Committer & PMC member
+ * Apache Ozone Comitter
  * Apache YuniKorn (Incubating) PPMC member
 
 @[Cloudera](https://www.cloudera.com/)
+ * [Apache Iceberg](https://iceberg.apache.org/) - next generation table format for Data Engineering and Data Warehouse.
  * Next generation resource scheduling [Apache YuniKorn (Incubating)](http://yunikorn.apache.org/)
  * Continue to evolve YARN for better enterprise adaption.
  * Kubernetes, Containerize, performance, service, ML and more
@@ -58,5 +60,9 @@ Want to know more? See [my portfolio](https://yangwwei.github.io/list/portfolio.
 9. [Cloud-Native Spark Scheduling with YuniKorn Scheduler](https://www.youtube.com/watch?v=ZA6aPZ9r9wA&feature=youtu.be). Spark & AI Summit, June 2020.
 
 10. [YARN to Kubernetes: How to tackle the challenages of resource management](). Hadoop Meetup Shanghai, Sep 26, 2020. [download pdf](https://github.com/yangwwei/yangwwei.github.io/raw/master/documents/YARN-to-Kubernetes-how-to-tackle-the-changes-on-resource-scheduling.pdf)
+
+11. [Efficient Spark Scheduling on K8s with Apache YuniKorn](https://youtu.be/xEKB56Sg0CQ). ApacheConf 2020, Oct 2020.
+
+12. [Next Level Spark on Kubernetes with Apache YuniKorn (Incubating)](https://youtu.be/gOST-iT-hj8). ApacheConf 2021, Oct, 2021.
 
 Get connected with LinkedIn: [Link me!](https://www.linkedin.com/in/yangwwei/).
