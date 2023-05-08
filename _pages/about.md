@@ -13,9 +13,13 @@ narrow: true
 ### ABOUT ME
 
 @[Apache](https://www.apache.org/)
+ * ASF Member
+ * Apache YuniKorn PMC member
  * Apache Hadoop Committer & PMC member
  * Apache Ozone Comitter
- * Apache YuniKorn (Incubating) PPMC member
+
+@[Apple]
+ * AIML data infrastructure
 
 @[Cloudera](https://www.cloudera.com/)
  * [Apache Iceberg](https://iceberg.apache.org/) - next generation table format for Data Engineering and Data Warehouse.
@@ -41,28 +45,30 @@ Want to know more? See [my portfolio](https://yangwwei.github.io/list/portfolio.
 
 ### My Talks/Posts:
 
-1. [Apache Hadoop Fundamentals](http://cs.ustc.edu.cn/2012/0815/c14931a24900/page.htm). School of Computer Science and Technology. Aug 15, 2012.
+1. [Beyond Experimental: Spark on Kubernetes](https://www.youtube.com/watch?v=u7htKIiK75c). KubeConf North America, Detroit. Oct, 2022.
 
-2. Apache Spark and DB2 with BLU Acceleration: Making ‘People Flow’ in Cities Measurable and Analyzable. IBM Insights Conference, Las Vegas. NV_ Oct 2015.
+2. [Next Level Spark on Kubernetes with Apache YuniKorn (Incubating)](https://youtu.be/gOST-iT-hj8). ApacheConf 2021, Oct, 2021.
 
-3. [Success at Apache: the Chance to Influence the World](https://blogs.apache.org/foundation/entry/success-at-apache-the-chance). ASF "Success at Apache" Blog Series. Jun 04, 2018.
+3. [Efficient Spark Scheduling on K8s with Apache YuniKorn](https://youtu.be/xEKB56Sg0CQ). ApacheConf 2020, Oct 2020.
 
-4. [Apache YARN 3.x in Alibaba](https://www.slideshare.net/Hadoop_Summit/apache-hadoop-yarn-3x-in-alibaba). Dataworks Summit, San Jose, CA. Jun 21, 2018.
+4. [YARN to Kubernetes: How to tackle the challenages of resource management](). Hadoop Meetup Shanghai, Sep 26, 2020. [download pdf](https://github.com/yangwwei/yangwwei.github.io/raw/master/documents/YARN-to-Kubernetes-how-to-tackle-the-changes-on-resource-scheduling.pdf)
 
-5. [Apache Hadoop YARN: State of the Union](https://bj2018.archsummit.com/presentation/862). ArchSummit, Beijing, China. [slides download](https://myslide.cn/slides/10468). Dec 07, 2018.
+5. [Cloud-Native Spark Scheduling with YuniKorn Scheduler](https://www.youtube.com/watch?v=ZA6aPZ9r9wA&feature=youtu.be). Spark & AI Summit, June 2020.
 
-6. [Open Hybrid Architecture: Running Stateful Containers on YARN](https://hortonworks.com/blog/open-hybrid-architecture-running-stateful-containers-on-yarn/). Hortonworks Tech Blog. Dec 17, 2018.
+6. [Energize Multi-tenancy Flink on K8s with YuniKorn ](https://www.youtube.com/watch?v=NemFKL0kK9U). Virtual Flink Forward Conference, San Francisco, Apr 24, 2020
 
 7. [Next Generation Scheduling: In Hybrid Cloud Environment for High Performance and Optimized Execution of Mixed Workloads](https://www.slideshare.net/Hadoop_Summit/next-generation-scheduling-for-yarn-and-k8s-for-hybrid-cloudonprem-environment-to-run-mixed-workloads). Dataworks Summit, Washington D.C. May 23, 2019
 
-8. [Energize Multi-tenancy Flink on K8s with YuniKorn ](https://www.youtube.com/watch?v=NemFKL0kK9U). Virtual Flink Forward Conference, San Francisco, Apr 24, 2020
+8. [Open Hybrid Architecture: Running Stateful Containers on YARN](https://hortonworks.com/blog/open-hybrid-architecture-running-stateful-containers-on-yarn/). Hortonworks Tech Blog. Dec 17, 2018.
 
-9. [Cloud-Native Spark Scheduling with YuniKorn Scheduler](https://www.youtube.com/watch?v=ZA6aPZ9r9wA&feature=youtu.be). Spark & AI Summit, June 2020.
+9. [Apache Hadoop YARN: State of the Union](https://bj2018.archsummit.com/presentation/862). ArchSummit, Beijing, China. [slides download](https://myslide.cn/slides/10468). Dec 07, 2018.
 
-10. [YARN to Kubernetes: How to tackle the challenages of resource management](). Hadoop Meetup Shanghai, Sep 26, 2020. [download pdf](https://github.com/yangwwei/yangwwei.github.io/raw/master/documents/YARN-to-Kubernetes-how-to-tackle-the-changes-on-resource-scheduling.pdf)
+10. [Apache YARN 3.x in Alibaba](https://www.slideshare.net/Hadoop_Summit/apache-hadoop-yarn-3x-in-alibaba). Dataworks Summit, San Jose, CA. Jun 21, 2018.
 
-11. [Efficient Spark Scheduling on K8s with Apache YuniKorn](https://youtu.be/xEKB56Sg0CQ). ApacheConf 2020, Oct 2020.
+11. [Success at Apache: the Chance to Influence the World](https://blogs.apache.org/foundation/entry/success-at-apache-the-chance). ASF "Success at Apache" Blog Series. Jun 04, 2018.
 
-12. [Next Level Spark on Kubernetes with Apache YuniKorn (Incubating)](https://youtu.be/gOST-iT-hj8). ApacheConf 2021, Oct, 2021.
+12. Apache Spark and DB2 with BLU Acceleration: Making ‘People Flow’ in Cities Measurable and Analyzable. IBM Insights Conference, Las Vegas. NV_ Oct 2015.
+
+13. [Apache Hadoop Fundamentals](http://cs.ustc.edu.cn/2012/0815/c14931a24900/page.htm). School of Computer Science and Technology. Aug 15, 2012.
 
 Get connected with LinkedIn: [Link me!](https://www.linkedin.com/in/yangwwei/).
