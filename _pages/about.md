@@ -18,7 +18,7 @@ narrow: true
  * Apache Hadoop Committer & PMC member
  * Apache Ozone Comitter
 
-@[Apple]
+@[Apple](https://www.apple.com/careers/us/)
  * AIML data infrastructure
 
 @[Cloudera](https://www.cloudera.com/)
