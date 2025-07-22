@@ -14,7 +14,8 @@ narrow: true
 
 #### [Apache](https://www.apache.org/)
  * ASF Member
- * Apache YuniKorn PMC member
+ * Ex-VP of Apache YuniKorn & PMC member
+ * Ex-Chiar of CNCF Batch working group
  * Apache Hadoop Committer & PMC member
  * Apache Ozone Comitter
 
