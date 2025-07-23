@@ -47,7 +47,7 @@ Want to know more? See [my portfolio](https://yangwwei.github.io/list/portfolio.
 ### My Talks/Posts:
 
 * [Ray at Scale: Apple's Approach to Elastic GPU Management](https://youtu.be/ZCRZQVt-r3g). RaySummit, San Francisco, 2024.
-* [Revolutionizing Kube Scalability T esting with KWOK](https://youtu.be/3YH_2vqWAzQ). KubeConf North America, Chicago, 2023.
+* [Revolutionizing Kube Scalability Testing with KWOK](https://youtu.be/3YH_2vqWAzQ). KubeConf North America, Chicago, 2023.
 * [Beyond Experimental: Spark on Kubernetes](https://www.youtube.com/watch?v=u7htKIiK75c). KubeConf North America, Detroit. Oct, 2022.
 * [Next Level Spark on Kubernetes with Apache YuniKorn (Incubating)](https://youtu.be/gOST-iT-hj8). ApacheConf 2021, Oct, 2021.
 * [Efficient Spark Scheduling on K8s with Apache YuniKorn](https://youtu.be/xEKB56Sg0CQ). ApacheConf 2020, Oct 2020.
