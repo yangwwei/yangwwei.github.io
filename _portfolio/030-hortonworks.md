@@ -1,6 +1,6 @@
 ---
 title: Software Engineer, Core R&D, Cloudera
-duration: Aug, 2018 - Present
+duration: Aug, 2018 - Apr, 2022
 skills:
   - YuniKorn
   - YARN
