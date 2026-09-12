@@ -8,8 +8,6 @@ narrow: true
 
 <hr />
 
-![My helpful screenshot]({{ "/assets/withspiderman.jpg" | absolute_url }})
-
 ### ABOUT ME
 
 #### [Apache](https://www.apache.org/)
@@ -20,7 +18,8 @@ narrow: true
  * Apache Ozone Comitter
 
 #### [Apple](https://www.apple.com/careers/us/)
- * AIML data infrastructure
+ * Fundation Model Infrastructure
+ * AIML Data Infrastructure
 
 #### [Cloudera](https://www.cloudera.com/)
  * [Apache Iceberg](https://iceberg.apache.org/) - next generation table format for Data Engineering and Data Warehouse.
@@ -42,7 +41,7 @@ narrow: true
  * Peking University  master
  * Wuhan University   bachelor
 
-Want to know more? See [my portfolio](https://yangwwei.github.io/list/portfolio.html).
+Want to know more? See [my experiences](https://yangwwei.github.io/list/portfolio.html).
 
 ### My Talks/Posts:
 
