@@ -1,0 +1,20 @@
+<footer class="site-footer" id="contact">
+    <div class="wrap">
+        <div class="foot-inner">
+            <div>
+                <div class="foot-name">{{ site.name }}</div>
+                <div class="foot-sub">San Francisco Bay Area · © {{ 'now' | date: "%Y" }}</div>
+            </div>
+            <div class="foot-links">
+                {% for item in site.data.nav %}
+                    <a href='{% if item.href contains ":" %}{% else %}{{ site.baseurl }}/{% endif %}{{ item.href }}'>{{ item.title }}</a>
+                {% endfor %}
+                {% for link in site.data.profile %}
+                    {% unless link.caption == "San Francisco Bay Area" %}
+                        <a href="{{ link.href }}" target="_blank" rel="noopener">{{ link.caption }}</a>
+                    {% endunless %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</footer>

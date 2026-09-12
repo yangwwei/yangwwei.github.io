@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include structure/head.html %}
+
+<body class="home">
+
+{% include bars/nav.html %}
+
+<!-- ===================== HERO ===================== -->
+<header class="hero">
+    <div class="wrap">
+        <div class="eyebrow">Software Engineer · AIML Infrastructure @ Apple</div>
+        <h1>Weiwei Yang</h1>
+        <p class="lede">
+            I build <strong>large-scale batch &amp; ML infrastructure</strong> — resource
+            scheduling, cloud-native data platforms, and the systems that keep GPUs busy.
+            Apache Software Foundation Member and co-creator of
+            <a href="https://yunikorn.apache.org/" target="_blank" rel="noopener">Apache YuniKorn</a>.
+        </p>
+        <nav class="social" aria-label="Social links">
+            {% for link in site.data.profile %}
+                <a href="{{ link.href }}" target="_blank" rel="noopener">
+                    <span class="icon">{% include {{ link.icon }} %}</span>
+                    {{ link.caption }}
+                </a>
+            {% endfor %}
+            <a href="https://www.linkedin.com/in/yangwwei/" target="_blank" rel="noopener">
+                LinkedIn
+            </a>
+        </nav>
+    </div>
+</header>
+
+<!-- =================== WRITING ==================== -->
+<section class="section" id="writing">
+    <div class="wrap">
+        <div class="section-head">
+            <h2>Recent Writing</h2>
+            <a class="see-all" href="{{ site.baseurl }}/list/posts.html">All posts →</a>
+        </div>
+
+        {% for post in site.posts limit:6 %}
+        <a class="post-row" href="{{ post.url | absolute_url }}">
+            <span class="post-date">{{ post.date | date: "%b %d, %Y" }}</span>
+            <span class="post-name">{{ post.title }}</span>
+        </a>
+        {% endfor %}
+    </div>
+</section>
+
+{% include bars/footer.html %}
+
+</body>
+
+</html>
