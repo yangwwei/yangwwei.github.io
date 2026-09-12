@@ -9,14 +9,16 @@
 
 <!-- ===================== HERO ===================== -->
 <header class="hero">
-    <div class="wrap">
-        <div class="eyebrow">Software Engineer · AIML Infrastructure @ Apple</div>
-        <h1>Weiwei Yang</h1>
+    <div class="wrap hero-grid">
+        <div class="hero-text">
+        <div class="eyebrow">Software Engineer · Foundation Model Infrastructure @ Apple</div>
+        <h1><span class="greeting">hi, I'm</span>Weiwei Yang</h1>
         <p class="lede">
-            I build <strong>large-scale batch &amp; ML infrastructure</strong> — resource
-            scheduling, cloud-native data platforms, and the systems that keep GPUs busy.
-            Apache Software Foundation Member and co-creator of
-            <a href="https://yunikorn.apache.org/" target="_blank" rel="noopener">Apache YuniKorn</a>.
+            I build <strong>large-scale ML infrastructure</strong> 🚀 for foundation model
+            training and inference — manage TPU fleet 🛰️, workload scheduler ⚙️, and the
+            systems that keep TPUs reliable, busy, and efficient ⚡. I am Apache Software
+            Foundation Member, former CNCF Batch Working Group Chair, and creator of
+            <a href="https://yunikorn.apache.org/" target="_blank" rel="noopener">Apache YuniKorn</a> 🦄.
         </p>
         <nav class="social" aria-label="Social links">
             {% for link in site.data.profile %}
@@ -29,6 +31,10 @@
                 LinkedIn
             </a>
         </nav>
+        </div>
+        <div class="hero-art">
+            <img src="/assets/astronaut.jpg" alt="Illustration of an astronaut in space" />
+        </div>
     </div>
 </header>
 
