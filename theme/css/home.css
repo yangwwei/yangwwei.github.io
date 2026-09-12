@@ -29,6 +29,25 @@ body.home {
     line-height: 1.6;
 }
 
+/* animated curved-surface decoration — fans from a point, flows down (home only) */
+.home-decor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: -1;
+    -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 58%, transparent 96%);
+    mask-image: linear-gradient(to bottom, #000 0%, #000 58%, transparent 96%);
+}
+.home-decor canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
 body.home a {
     color: var(--text);
     text-decoration: none;
@@ -142,6 +161,12 @@ body.home ::selection {
     letter-spacing: 0.02em;
     color: var(--muted);
     margin-bottom: 10px;
+}
+.hero h1 .name {
+    font-family: "Courier New", Courier, monospace;
+    font-weight: 700;
+    color: var(--text);
+    letter-spacing: -0.01em;
 }
 .hero h1 .zh { color: var(--muted-2); font-weight: 200; }
 .hero .lede {
@@ -354,7 +379,7 @@ body.page .content h2 { font-size: 1.5rem; margin-top: 2em; }
 body.page .content h3 { font-size: 1.2rem; color: var(--accent); }
 body.page .content h4 { font-size: 1.05rem; }
 body.page .content p,
-body.page .content li { color: var(--muted); }
+body.page .content li { color: var(--text); }
 body.page .content strong,
 body.page .content b { color: var(--text); font-weight: 500; }
 
@@ -366,18 +391,18 @@ body.page .border-bottom,
 body.page .border-left { border-color: var(--line) !important; }
 
 /* list page titles */
-body.page .list-title { color: var(--muted-2); letter-spacing: 0.08em; }
+body.page .list-title { color: #d6d7dc; letter-spacing: 0.08em; }
 
-/* muted/secondary text */
+/* muted/secondary text — kept light for clear legibility */
 body.page .text-secondary,
-body.page .text-muted { color: var(--muted-2) !important; }
+body.page .text-muted { color: #d6d7dc !important; }
 
 /* cards / sidebar panels (Bootstrap .bg-light|.bg-white use !important) */
 body.page .card { background: transparent; border: 1px solid var(--line); border-radius: 12px; color: var(--text); }
 body.page .card.bg-light { background: var(--bg-2) !important; border-color: var(--line); }
 body.page .card-title,
 body.page .card-subtitle { color: var(--text); }
-body.page .card-subtitle.text-secondary { color: var(--muted-2) !important; }
+body.page .card-subtitle.text-secondary { color: #d6d7dc !important; }
 
 /* portfolio / post cards (bottom-border list style) */
 body.page .card-portfolio,
@@ -395,7 +420,7 @@ body.page a.tag,
 body.page .bg-white {
     background: var(--bg-3) !important;
     border: 1px solid var(--line) !important;
-    color: var(--muted) !important;
+    color: #d6d7dc !important;
     border-radius: 8px !important;
 }
 body.page a.skill:hover,
@@ -419,7 +444,7 @@ body.page .content hr { border-top: 1px solid var(--line); }
 body.page .content blockquote {
     border-left: 3px solid var(--accent);
     padding-left: 16px;
-    color: var(--muted);
+    color: #d6d7dc;
     margin-left: 0;
 }
 body.page .content code {
@@ -444,7 +469,7 @@ body.page .content table { width: 100%; border-collapse: collapse; margin: 1.2em
 body.page .content th,
 body.page .content td { border: 1px solid var(--line); padding: 8px 12px; }
 body.page .content th { background: var(--bg-2); color: var(--text); text-align: left; }
-body.page .content td { color: var(--muted); }
+body.page .content td { color: var(--text); }
 
 /* svg icons in sidebar */
 body.page .icon.grey svg path { fill: var(--muted-2); }

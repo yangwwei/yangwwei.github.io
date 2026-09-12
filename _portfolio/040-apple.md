@@ -2,6 +2,9 @@
 title: Software Engineer, AIML, Apple
 duration: Apr, 2022 - Present
 skills:
+  - TPU Scheduling
+  - TPU Fleet
+  - Fundation Model Pretrain
   - LLM Inference
   - YuniKorn
   - Kubernetes
@@ -12,6 +15,8 @@ skills:
 
 Oct 2024 – Present
 
+* **Apple Intelligence**: build large ML compute infrastructure for Fundation Model Training and Inference. Manage large TPU fleet,
+responsible for workload scheduler, work on training/inference resilience and efficiency.
 * Leading the development of `Apple Batch`, a managed service for batch compute powering data processing
 and ML workloads. The service features cross-cloud and cross-region support, along with heterogeneous resource discovery and
 management. Designed a truly serverless architecture for batch workloads in a modern, cloud-native way.
