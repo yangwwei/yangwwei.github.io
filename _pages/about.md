@@ -10,38 +10,15 @@ narrow: true
 
 ### ABOUT ME
 
-#### [Apache](https://www.apache.org/)
+####
+ * Fundation Model Infra @ Apple
  * ASF Member
- * Ex-VP of Apache YuniKorn & PMC member
+ * Ex-VP of [Apache YuniKorn](https://yunikorn.apache.org/)
  * Ex-Chiar of CNCF Batch working group
- * Apache Hadoop Committer & PMC member
- * Apache Ozone Comitter
+ * [Apache Hadoop](https://hadoop.apache.org/) Committer & PMC member
+ * [Apache Ozone](https://ozone.apache.org/) Comitter
 
-#### [Apple](https://www.apple.com/careers/us/)
- * Fundation Model Infrastructure
- * AIML Data Infrastructure
-
-#### [Cloudera](https://www.cloudera.com/)
- * [Apache Iceberg](https://iceberg.apache.org/) - next generation table format for Data Engineering and Data Warehouse.
- * Next generation resource scheduling [Apache YuniKorn (Incubating)](http://yunikorn.apache.org/)
- * Continue to evolve YARN for better enterprise adaption.
- * Kubernetes, Containerize, performance, service, ML and more
-
-#### [Alibaba](https://en.wikipedia.org/wiki/Alibaba_Group)
- * Real-time computing with Apache Flink, Infra engineer
- * Apache Hadoop YARN at `10k+` nodes scale. Focus area: resource over-subscription, multi-dimension resource support, global scheduling, placement constraint/node attributes.
-
-#### [IBM](https://en.wikipedia.org/wiki/IBM)
- * Startup member of `BigInsights` project (A Hadoop based BigData Platform Offering by IBM)
- * Distributed system backend engineer (cluster installation/monitoring)
- * Team lead and BigData architect (worked with 50+ customers)
- * Apache committer (Apache Hadoop HDFS & YARN, 50k+ LoC).
-
-#### Education:
- * Peking University  master
- * Wuhan University   bachelor
-
-Want to know more? See [my experiences](https://yangwwei.github.io/list/portfolio.html).
+[my experiences](https://yangwwei.github.io/list/portfolio.html).
 
 ### My Talks/Posts:
 
