@@ -10,15 +10,17 @@ narrow: true
 
 ### ABOUT ME
 
-####
- * Fundation Model Infra @ Apple
- * ASF Member
- * Ex-VP of [Apache YuniKorn](https://yunikorn.apache.org/)
- * Ex-Chiar of CNCF Batch working group
- * [Apache Hadoop](https://hadoop.apache.org/) Committer & PMC member
- * [Apache Ozone](https://ozone.apache.org/) Comitter
+Distributed system engineer, open-source leader — building large-scale infrastructure for AI/ML workloads.
 
-[my experiences](https://yangwwei.github.io/list/portfolio.html).
+* **Foundation Model Infra** @ Apple
+* **ASF Member** — The Apache Software Foundation
+* **Ex-VP**, [Apache YuniKorn](https://yunikorn.apache.org/)
+* **Ex-Chair**, CNCF Batch Working Group
+* **Committer & PMC Member**, [Apache Hadoop](https://hadoop.apache.org/)
+* **Committer**, [Apache Ozone](https://ozone.apache.org/)
+
+📄 [View my full portfolio →](https://yangwwei.github.io/list/portfolio.html)
+🔗 [Connect on LinkedIn →](https://www.linkedin.com/in/yangwwei/)
 
 ### My Talks/Posts:
 
@@ -38,4 +40,3 @@ narrow: true
 * Apache Spark and DB2 with BLU Acceleration: Making ‘People Flow’ in Cities Measurable and Analyzable. IBM Insights Conference, Las Vegas. NV_ Oct 2015.
 * [Apache Hadoop Fundamentals](http://cs.ustc.edu.cn/2012/0815/c14931a24900/page.htm). School of Computer Science and Technology. Aug 15, 2012.
 
-Get connected with LinkedIn: [Link me!](https://www.linkedin.com/in/yangwwei/).
